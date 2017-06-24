@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: Attach Font-Awesome
-Plugin URI: http://wordpress.org/plugins/attach-font-awesome/
+Plugin URI: https://github.com/afshintalebi/attach-font-awesome/
 Description: Simply add font-awesome library to head tag
 Author: Afshin Talebi
 Version: 0.1
