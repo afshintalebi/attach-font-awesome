@@ -18,8 +18,8 @@ msgstr "Attach Font Awesome"
 
 #. translators: plugin header field 'Description'
 #: attach-font-awesome.php:9
-msgid "Simply add font awesome library to front of site"
-msgstr "Simply add font awesome library to front of site"
+msgid "add font awesome library to front of site"
+msgstr "add font awesome library to the front of site"
 
 #. translators: plugin header field 'Author'
 #: attach-font-awesome.php:10

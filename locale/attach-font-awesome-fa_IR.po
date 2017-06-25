@@ -18,8 +18,8 @@ msgstr "مجموعه آیکون Font Awesome"
 
 #. translators: plugin header field 'Description'
 #: attach-font-awesome.php:9
-msgid "Simply add font awesome library to front of site"
-msgstr "افزودن کتابخانه font-awesome به قالب فرانت سایت وردپرس"
+msgid "add font awesome library to front of site"
+msgstr "افزودن کتابخانه font awesome به قالب فرانت سایت وردپرس"
 
 #. translators: plugin header field 'Author'
 #: attach-font-awesome.php:10
