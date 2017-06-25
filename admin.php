@@ -14,7 +14,8 @@ function atchfa_check_access()
  */
 function atchfa_plugin_options()
 {
-    add_options_page('Attach Font-Awesome Options', 'Attach Font-Awesome', 'manage_options', 'atchfa-plugin-options', 'atchfa_plugin_options_body');
+    global $atchfa_loalization;
+    add_options_page($atchfa_loalization['font_awesome_page_title'], $atchfa_loalization['menu_title'], 'manage_options', 'atchfa-plugin-options', 'atchfa_plugin_options_body');
 }
 
 /**

@@ -19,7 +19,8 @@ $atchfa_data = [
 	]
 ];
 $atchfa_loalization = [
-	'font_awesome_page_title'=>__( 'Attach Font-Awesome Options', 'attach-font-awesome' ),
+	'menu_title'=>__( 'Attach Font Awesome', 'attach-font-awesome' ),
+	'font_awesome_page_title'=>__( 'Attach Font Awesome Options', 'attach-font-awesome' ),
 	'local_type_label'=>__( 'Local', 'attach-font-awesome' ),
 	'cdn_type_label'=>__( 'CDN (cloudflare.com)', 'attach-font-awesome' ),
 	'version_label'=>__( 'Version', 'attach-font-awesome' ),
