@@ -40,7 +40,7 @@ function atchfa_admin_js_files()
 function atchfa_plugin_options_body()
 {
     atchfa_check_access();
-    global $atchfa_data;
+    global $atchfa_data, $atchfa_loalization;
 //    get saved value of options
     $savedOptions['version'] = atchfa_get_cdn_version_option();
     $savedOptions['load-type'] = atchfa_get_load_type_option();
@@ -48,29 +48,29 @@ function atchfa_plugin_options_body()
     $versions = $atchfa_data['cdn_versions'];
     ?>
     <div class="wrap">
-        <h1>Attach Font-Awesome Options</h1>
+        <h1><?=$atchfa_loalization['font_awesome_page_title'];?></h1>
         <form method="post" action="options.php">
             <?php echo settings_fields('atchfa-option-group'); ?>
             <?php echo do_settings_sections('atchfa-option-group'); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row">Load css file from :</th>
+                    <th scope="row"><?=$atchfa_loalization['loading_from_label'];?> :</th>
                     <td>
                         <label>
                             <input type="radio" value="local" id="atchfaLoadLocalType" name="attach-load-type"
                                    <?php if ($savedOptions['load-type'] == 'local'): ?>checked<?php endif; ?>/>
-                            Local
+                            <?=$atchfa_loalization['local_type_label'];?>
                         </label>
                         <label>
                             <input type="radio" value="cdn" id="atchfaLoadCdnType" name="attach-load-type"
                                    <?php if ($savedOptions['load-type'] == 'cdn'): ?>checked<?php endif; ?>/>
-                            CDN (cloudflare.com)
+                            <?=$atchfa_loalization['cdn_type_label'];?>
                         </label>
                     </td>
                 </tr>
                 <tr valign="top" id="atchfaCdnVersionContainter"
                     <?php if ($savedOptions['load-type'] == 'local'): ?>style="display:none;"<?php endif; ?>>
-                    <th scope="row">Version :</th>
+                    <th scope="row"><?=$atchfa_loalization['version_label'];?> :</th>
                     <td>
                         <select name="attach-version">
                             <?php foreach ($versions as $version => $url) : ?>

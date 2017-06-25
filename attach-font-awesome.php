@@ -12,6 +12,8 @@ Version: 0.1
 Author URI: http://afshintalebi.com/
 */
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+//load localization files
+load_plugin_textdomain('attach-font-awesome', false, basename( dirname( __FILE__ ) ) . '/locale' );
 //config data
 require(plugin_dir_path(__FILE__).'/inc/data.php');
 //admin functions
@@ -28,6 +30,4 @@ if ( is_admin() ){
   // front actions
   add_action('wp_head','atchfa_front_css_files'); 
 }
-
-
 ?>

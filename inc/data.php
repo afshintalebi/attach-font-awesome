@@ -18,6 +18,13 @@ $atchfa_data = [
 		'4.0.0'=>'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.min.css'
 	]
 ];
+$atchfa_loalization = [
+	'font_awesome_page_title'=>__( 'Attach Font-Awesome Options', 'attach-font-awesome' ),
+	'local_type_label'=>__( 'Local', 'attach-font-awesome' ),
+	'cdn_type_label'=>__( 'CDN (cloudflare.com)', 'attach-font-awesome' ),
+	'version_label'=>__( 'Version', 'attach-font-awesome' ),
+	'loading_from_label'=>__( 'Load css file from', 'attach-font-awesome' ),
+];
 function atchfa_get_cdn_version_option () {
 	return get_option('attach-version');
 }
