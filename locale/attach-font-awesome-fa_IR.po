@@ -14,7 +14,7 @@ msgstr ""
 #. translators: plugin header field 'Plugin Name'
 #: attach-font-awesome.php:7
 msgid "Attach Font Awesome"
-msgstr "مجموعه آیکون های  Font Awesome"
+msgstr "مجموعه آیکون Font Awesome"
 
 #. translators: plugin header field 'Description'
 #: attach-font-awesome.php:9
@@ -26,22 +26,17 @@ msgstr "افزودن کتابخانه font-awesome به قالب فرانت سا
 msgid "Afshin Talebi"
 msgstr "افشین طالبی"
 
-#: inc/data.php:22
 msgid "Attach Font Awesome Options"
 msgstr "تنظیمات Attach Font Awesome"
 
-#: inc/data.php:23
 msgid "Local"
 msgstr "محلی"
 
-#: inc/data.php:24
 msgid "CDN (cloudflare.com)"
 msgstr "خارجی (cloudflare.com)"
 
-#: inc/data.php:25
 msgid "Version"
 msgstr "نسخه"
 
-#: inc/data.php:26
 msgid "Load css file from"
 msgstr "باکذاری فایل از سرور"
