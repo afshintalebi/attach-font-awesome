@@ -10,12 +10,6 @@ function atchfa_check_access()
 }
 
 /**
- * load localization files
- */
-function atchfa_load_textdomain () {
-    load_plugin_textdomain('attach-font-awesome', false, basename( dirname( __FILE__ ) ) . '/locale' );
-}
-/**
  * add option page to settings menu
  */
 function atchfa_plugin_options()
