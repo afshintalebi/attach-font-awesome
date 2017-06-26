@@ -11,11 +11,7 @@ function atchfa_front_css_files()
 	$file = '';
 //	set utl of library to load
 	switch ($load_type) {
-		case 'local':
-			$file = plugins_url('css/font-awesome.min.css',__FILE__);
-			break;
 		case 'cdn':
-		default:
 //			get cdn versions
 			$versions = $atchfa_data['cdn_versions'];
 //			get default version
@@ -24,6 +20,11 @@ function atchfa_front_css_files()
 			$selected_version = atchfa_get_cdn_version_option();
 //			load selected cdn version if defined, other else load default version
 			$file = $selected_version ? $selected_version : $versions[$default_version] ;
+			break;
+		case 'local':
+		default:
+
+		$file = plugins_url('css/font-awesome.min.css',__FILE__);
 			break;
 	}
 	if($file)

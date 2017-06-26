@@ -59,7 +59,7 @@ function atchfa_plugin_options_body()
                     <td>
                         <label>
                             <input type="radio" value="local" id="atchfaLoadLocalType" name="attach-load-type"
-                                   <?php if ($savedOptions['load-type'] == 'local'): ?>checked<?php endif; ?>/>
+                                   <?php if ($savedOptions['load-type'] == 'local' || !$savedOptions['load-type']): ?>checked<?php endif; ?>/>
                             <?=$atchfa_loalization['local_type_label'];?>
                         </label>
                         <label>
@@ -70,7 +70,7 @@ function atchfa_plugin_options_body()
                     </td>
                 </tr>
                 <tr valign="top" id="atchfaCdnVersionContainter"
-                    <?php if ($savedOptions['load-type'] == 'local'): ?>style="display:none;"<?php endif; ?>>
+                    <?php if ($savedOptions['load-type'] == 'local' || !$savedOptions['load-type']): ?>style="display:none;"<?php endif; ?>>
                     <th scope="row"><?=$atchfa_loalization['version_label'];?> :</th>
                     <td>
                         <select name="attach-version">
