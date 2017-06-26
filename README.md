@@ -1,2 +1,2 @@
 # attach-font-awesome
-Wordpress plugin to add font-awesome library to front of website
+Wordpress plugin for add font-awesome library to the front of website
