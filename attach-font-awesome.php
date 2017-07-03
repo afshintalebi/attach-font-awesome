@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: Attach Font Awesome
-Plugin URI: https://github.com/afshintalebi/attach-font-awesome/
+Plugin URI: https://wordpress.org/plugins/attach-font-awesome
 Description: add font awesome library to front of site
 Author: Afshin Talebi
 Version: 0.1
